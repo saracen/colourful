@@ -13,3 +13,11 @@ jobs:
           msgcat --version
           TERM=xterm msgcat --color=test
           TERM=xterm-256color msgcat --color=test
+      - run: |
+          echo -e "\x1b(BUS ASCII: Hello #"
+          echo -e "\x1b(AUK ASCII: Hello #"
+          echo -e "\x1b(BDEC Special Graphics: \x1b(0lqqqk"
+          echo -e "\x1b(XBANG ~~~~"
+          echo -e "\x1b(BInvoke G2: \x1bN#"
+          echo -e "\x1b(BDesignate G2 UK ASCII and invoke G2: \x1b*A\x1bN#"
+          echo -e "\x1b(BDesignate DEC Special Graphics to G3 (\x1b+0) and invoke: \x1bOq"
