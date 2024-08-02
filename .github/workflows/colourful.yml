@@ -21,3 +21,4 @@ jobs:
           echo -e "\x1b(BInvoke G2: \x1bN#"
           echo -e "\x1b(BDesignate G2 UK ASCII and invoke G2: \x1b*A\x1bN#"
           echo -e "\x1b(BDesignate DEC Special Graphics to G3 (\x1b+0) and invoke: \x1bOq"
+      - run: echo "::notice file=app.js,line=1,col=5,endColumn=7::Missing semicolon"
